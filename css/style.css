@@ -299,9 +299,10 @@ button#whatsapp-button:hover {
 
     header .logo {
         position: absolute; /* Posiciona a logo no canto esquerdo */
-        top: 10px;
+        top: 6px;
         left: 20px;
-        max-width: 80px; /* Ajusta o tamanho máximo da logo para telas menores */
+        padding: 0px 1px 0px 1px; /* Ajusta o padding da logo */
+        max-width: 50px; /* Ajusta o tamanho máximo da logo para telas menores */
     }
 
     header h1 {
@@ -318,13 +319,13 @@ button#whatsapp-button:hover {
         list-style-type: none; /* Remove os pontos da lista */
         margin: 0;
         padding: 0;
-        display: flex; /* Exibe os itens da navegação em uma coluna */
-        flex-direction: column; /* Alinha os itens verticalmente */
-        align-items: center; /* Centraliza os itens horizontalmente */
+        display: flex; /* Exibe os itens da navegação em uma linha */
+        flex-direction: row; /* Alinha os itens horizontalmente */
+        justify-content: end; /* Centraliza os itens na linha */
     }
 
     header nav ul li {
-        margin: 2px 0; /* Adiciona espaço vertical entre os itens */
+        margin: 0 0px; /* Adiciona espaço horizontal entre os itens */
     }
 
     header nav ul li a {
@@ -339,6 +340,8 @@ button#whatsapp-button:hover {
     header nav ul li a:hover {
         color: #e0e0e0; /* Cor do texto ao passar o mouse */
     }
+}
+
 
     #apresentacao {
         padding: 30px 20px; /* Ajusta o padding para telas menores */
