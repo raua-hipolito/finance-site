@@ -9,52 +9,52 @@ body {
 /* Header */
 header {
     background-color: #F7E300; /* Amarelo do Banco do Brasil */
-    color: black; /* Ajusta a cor do texto para um contraste adequado */
+    color: black;
     padding: 15px 20px;
     display: flex;
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative; /* Para posicionar a logo de forma absoluta */
 }
 
 header .logo {
-    max-width: 76px; /* Ajusta o tamanho máximo da logo */
-    height: auto; /* Mantém a proporção da imagem */
-    position: absolute; /* Posiciona a logo no canto superior esquerdo */
-    top: 10px; /* Ajusta o espaço do topo */
-    left: 20px; /* Ajusta o espaço da esquerda */
+    max-width: 76px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 20px;
 }
 
 header h1 {
-    flex: 1; /* Expande o título para ocupar o espaço restante */
-    text-align: center; /* Centraliza o texto do título */
-    margin: 0; /* Remove margens padrão */
+    flex: 1;
+    text-align: center;
+    margin: 0;
 }
 
 header nav {
-    flex: 2; /* Expande a navegação para ocupar o espaço restante */
-    text-align: center; /* Centraliza o texto da navegação */
+    flex: 2;
+    text-align: center;
 }
 
 header nav ul {
-    list-style-type: none; /* Remove os marcadores dos itens */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-flex; /* Exibe os itens de navegação em linha horizontal */
+    display: inline-flex;
 }
 
 header nav ul li {
-    margin-right: 15px; /* Adiciona espaço horizontal entre os itens */
+    margin-right: 15px;
 }
 
 header nav ul li a {
-    color: black; /* Ajusta a cor dos links para preto, para contrastar com o fundo amarelo */
+    color: black;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #000000; /* Cor do link ao passar o mouse */
+    color: #000000;
 }
 
 /* Seções */
@@ -71,23 +71,22 @@ section {
 }
 
 #apresentacao img {
-    max-width: 400px; /* Aumenta o tamanho da logo */
-    border-radius: 10px; /* Menos arredondada, ajustada para um leve arredondamento */
+    max-width: 400px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #apresentacao h1 {
-    font-size: 2.9em; /* Aumenta o tamanho do texto dos subtítulos na seção de apresentação */
+    font-size: 2.9em;
 }
 
 #apresentacao h3 { 
-    font-size: 1.7em; /* Aumenta o tamanho do texto dos subtítulos na seção de apresentação */
+    font-size: 1.7em;
 }
 
 #apresentacao p { 
-    font-size: 1.5em; /* Aumenta o tamanho do texto dos subtítulos na seção de apresentação */
+    font-size: 1.5em;
 }
-
 
 #servicos {
     background-color: #ffffff;
@@ -106,7 +105,7 @@ section {
     padding: 15px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px; /* Espaçamento entre os itens */
+    margin-bottom: 10px;
     font-size: 1.1em;
     text-align: center;
     transition: background-color 0.3s, transform 0.3s;
@@ -199,11 +198,11 @@ footer {
 }
 
 .contato-info {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .contato-info p {
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
 .contato-info a {
@@ -238,9 +237,9 @@ footer {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espaço entre os botões */
+    gap: 10px;
     margin-top: 20px;
-    flex-direction: column; /* Alinha os botões verticalmente em telas menores */
+    flex-direction: column;
 }
 
 .button-container button {
@@ -255,11 +254,11 @@ footer {
 }
 
 button[type="submit"] {
-    background-color: #0044cc; /* Cor do botão de e-mail */
+    background-color: #0044cc;
 }
 
 button#whatsapp-button {
-    background-color: #25D366; /* Cor do botão de WhatsApp */
+    background-color: #25D366;
 }
 
 button[type="submit"]:hover {
@@ -271,126 +270,135 @@ button#whatsapp-button:hover {
 }
 
 .cta-link {
-    background-color: #0044cc; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    padding: 12px 25px; /* Espaçamento interno */
-    text-decoration: none; /* Remove sublinhado */
-    font-weight: bold; /* Texto em negrito */
-    border-radius: 5px; /* Bordas arredondadas */
-    display: inline-block; /* Faz com que o link se comporte como um botão */
-    margin-top: 20px; /* Espaçamento superior */
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Efeitos de transição */
+    background-color: #0044cc;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .cta-link:hover {
-    background-color: #003399; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Leve aumento no tamanho */
+    background-color: #003399;
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Alinha os itens verticalmente */
-        align-items: center; /* Centraliza os itens horizontalmente */
-        padding: 10px 20px; /* Ajusta o padding para telas menores */
-        position: relative; /* Permite a logo se posicionar no canto esquerdo */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
     }
 
     header .logo {
-        position: absolute; /* Posiciona a logo no canto esquerdo */
-        top: 6px;
+        position: absolute;
+        top: 10px;
         left: 20px;
-        padding: 0px 1px 0px 1px; /* Ajusta o padding da logo */
-        max-width: 50px; /* Ajusta o tamanho máximo da logo para telas menores */
+        padding: 0px 1px 0px 1px;
+        max-width: 50px;
     }
 
     header h1 {
-        margin: 20px 0; /* Ajusta a margem do título */
-        font-size: 1.5em; /* Ajusta o tamanho da fonte do título para telas menores */
+        margin: 20px 0;
+        font-size: 1.5em;
     }
 
     header nav {
-        width: 100%; /* Faz com que a navegação ocupe toda a largura disponível */
-        text-align: center; /* Centraliza o texto da navegação */
+        width: 100%;
+        text-align: center;
     }
 
     header nav ul {
-        list-style-type: none; /* Remove os pontos da lista */
+        list-style-type: none;
         margin: 0;
         padding: 0;
-        display: flex; /* Exibe os itens da navegação em uma linha */
-        flex-direction: row; /* Alinha os itens horizontalmente */
-        justify-content: end; /* Centraliza os itens na linha */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
     }
 
     header nav ul li {
-        margin: 0 0px; /* Adiciona espaço horizontal entre os itens */
+        margin: 0 0px;
     }
 
     header nav ul li a {
-        font-size: 1em; /* Ajusta o tamanho da fonte */
-        display: inline-block; /* Faz com que o link se comporte como um bloco */
-        padding: 10px 15px; /* Adiciona espaçamento interno para tornar o link mais clicável */
-        color: rgb(0, 0, 0); /* Cor do texto dos links */
-        text-decoration: none; /* Remove sublinhado dos links */
-        font-weight: bold; /* Texto em negrito */
+        font-size: 1em;
+        display: inline-block;
+        padding: 10px 15px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
     }
 
     header nav ul li a:hover {
-        color: #e0e0e0; /* Cor do texto ao passar o mouse */
+        color: #e0e0e0;
+    }
+
+    #apresentacao h1 {
+        font-size: 2.4em;
+    }
+
+    #apresentacao p {
+        font-size: 1.3em;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #servicos ul {
+        padding: 0 20px;
+    }
+
+    #servicos ul li {
+        margin-bottom: 20px;
     }
 }
 
-
-    #apresentacao {
-        padding: 30px 20px; /* Ajusta o padding para telas menores */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
     }
 
-    #apresentacao img {
-        max-width: 170px; /* Ajusta o tamanho máximo da imagem para telas menores */
+    header .logo {
+        max-width: 40px;
     }
 
-    #contato form {
-        padding: 45px;
+    header h1 {
+        font-size: 1.5em;
     }
 
-    #contato input,
-    #contato textarea {
+    header nav ul li a {
+        font-size: 0.9em;
+    }
+
+    #apresentacao h1 {
+        font-size: 2em;
+    }
+
+    #apresentacao p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .button-container button {
+        padding: 10px 20px;
         font-size: 0.9em;
     }
 
     footer {
-        position: static; /* Remove a posição fixa para telas menores */
-        padding: 20px;
-    }
-
-    .button-container {
-        flex-direction: column; /* Alinha os botões verticalmente */
-    }
-
-    #servicos ul li {
-        font-size: 1em; /* Ajusta o tamanho da fonte */
-        padding: 10px; /* Ajusta o padding */
-    }
-
-    #contato input,
-    #contato textarea {
-        font-size: 0.8em; /* Ajusta o tamanho da fonte */
-    }
-
-@media (max-width: 480px) {
-    /* Ajustes adicionais para telas muito pequenas */
-    #apresentacao img {
-        max-width: 250px; /* Ajusta ainda mais o tamanho da imagem */
-    }
-
-    #contato input,
-    #contato textarea {
         font-size: 0.8em;
-    }
-
-    .cta-link {
-        padding: 10px 20px; /* Ajusta o padding do link CTA */
+        padding: 10px 15px;
     }
 }
