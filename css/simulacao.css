@@ -3,6 +3,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
+    margin: 0; /* Remove margem para evitar rolagem horizontal em dispositivos móveis */
 }
 
 h1 {
@@ -12,12 +13,13 @@ h1 {
 
 .container {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
     justify-content: space-between;
     gap: 20px;
 }
 
-form {
-    max-width: 400px;
+form, #informacoes {
+    flex: 1 1 100%; /* Ocupa 100% da largura disponível em telas menores */
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -56,14 +58,6 @@ button:hover {
     background-color: #003399;
 }
 
-#informacoes {
-    max-width: 400px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 #resultado {
     margin-top: 20px;
     text-align: center;
@@ -71,7 +65,50 @@ button:hover {
 }
 
 .voltar {
-    width: 150px; /* Defina um tamanho fixo para o botão, se necessário */
-    margin: 20px auto; /* Margem superior e inferior, e auto para centralizar horizontalmente */
-    display: block; /* Faz com que o botão ocupe a largura definida e seja tratado como bloco */
+    width: 100%;
+    max-width: 150px; /* Limita o tamanho máximo do botão */
+    margin: 20px auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+        gap: 10px; /* Reduz o espaço entre os itens */
+    }
+
+    form, #informacoes {
+        padding: 10px; /* Reduz o padding */
+    }
+
+    input, select {
+        font-size: 0.9em; /* Ajusta o tamanho da fonte */
+    }
+
+    #resultado {
+        font-size: 1em; /* Reduz o tamanho da fonte para resultados */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduz o padding do body para telas muito pequenas */
+    }
+
+    form, #informacoes {
+        padding: 20px; /* Ajusta o padding para telas menores */
+    }
+
+    input, select {
+        font-size: 0.8em; /* Reduz ainda mais o tamanho da fonte */
+        padding: 6px; /* Ajusta o padding dos inputs */
+    }
+
+    button {
+        font-size: 0.9em; /* Reduz o tamanho da fonte do botão */
+    }
+
+    #resultado {
+        font-size: 0.9em; /* Ajusta o tamanho da fonte do resultado */
+    }
 }
