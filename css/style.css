@@ -378,7 +378,6 @@ button#whatsapp-button:hover {
     #contato textarea {
         font-size: 0.8em; /* Ajusta o tamanho da fonte */
     }
-}
 
 @media (max-width: 480px) {
     /* Ajustes adicionais para telas muito pequenas */
