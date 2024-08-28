@@ -382,7 +382,7 @@ button#whatsapp-button:hover {
 @media (max-width: 480px) {
     /* Ajustes adicionais para telas muito pequenas */
     #apresentacao img {
-        max-width: 120px; /* Ajusta ainda mais o tamanho da imagem */
+        max-width: 250px; /* Ajusta ainda mais o tamanho da imagem */
     }
 
     #contato input,
