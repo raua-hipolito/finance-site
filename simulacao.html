@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Crédito</title>
+    <link rel="stylesheet" href="css/simulacao.css">
+</head>
+<body>
+
+    <h1>Simulação de Crédito</h1>
+
+    <div class="container">
+        <form id="simulacao-form">
+            <label for="tipo">Tipo de Crédito:</label>
+            <select id="tipo" name="tipo" required onchange="mostrarInformacoes()">
+                <option value="pessoal">Crédito Pessoal</option>
+                <option value="consignado">Crédito Consignado</option>
+                <option value="salario">Crédito Salário</option>
+                <option value="beneficio">Crédito Benefício</option>
+                <option value="antecipacao">Antecipação de 13º</option>
+                <option value="renovacao">Renovação de Empréstimo</option>
+                <option value="consorcio">Consórcio</option>
+            </select>
+
+            <label for="valor">Valor do Empréstimo:</label>
+            <input type="number" id="valor" name="valor" required placeholder="Ex: 10000">
+
+            <label for="prazo">Prazo (meses):</label>
+            <input type="number" id="prazo" name="prazo" required placeholder="Ex: 12">
+
+            <label for="taxa">Taxa de Juros Anual (%):</label>
+            <input type="number" id="taxa" name="taxa" required placeholder="Ex: 5">
+
+            <button type="button" onclick="calcularSimulacao()">Calcular</button>
+        </form>
+
+        <div id="informacoes">
+            <h2>Informações sobre o Crédito</h2>
+            <p id="info-texto">Selecione um tipo de crédito para ver mais informações.</p>
+        </div>
+    </div>
+
+    <div id="resultado"></div>
+    <button class="voltar" onclick="voltarPagina()">Voltar</button>
+
+    <script src="js/script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>

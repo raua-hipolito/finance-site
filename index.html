@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Financeiros - Méjane Vaz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/pngwing.com.png" alt="Logo banco" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contatos</a></li>
+                <li><a href="#simulacao">Simulação</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section id="apresentacao">
+        <h1>Méjane Vaz</h1>
+        <h3>Atendimento Personalizado!</h3>
+        <p>Oferecemos uma variedade de serviços financeiros para atender suas necessidades.</p>
+        <img src="assets/images/logo.jpg" alt="Logo Méjane Vaz">
+    </section>
+    
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Crédito consignado</li>
+            <li>Crédito salário</li>
+            <li>Crédito benefício</li>
+            <li>Crédito pessoal</li>
+            <li>Antecipação de 13º</li>
+            <li>Renovação de empréstimo</li>
+            <li>Abertura de conta</li>
+            <li>Consórcio</li>
+        </ul>
+        <a class="cta-link" href="simulacao.html">Faça uma Simulação de Crédito</a>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Se você tiver qualquer dúvida ou precisar de mais informações, entre em contato conosco!</p>
+        
+        <form id="contato-form" action="mailto:rauavasconcelos22@gmail.com" method="POST" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <div class="button-container">
+                <button type="submit">Enviar por E-mail</button>
+                <button id="whatsapp-button" type="button">Enviar pelo WhatsApp</button>
+            </div>
+        </form>
+        
+   
+    
+        <div class="contato-info">
+            <p><strong>Méjane Vaz</strong></p>
+            <p><a href="tel:91991865886">Telefone: 91 99186-5886</a></p>
+            <p><a href="mailto:seuemail@exemplo.com">Email: seuemail@exemplo.com</a></p>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <p>© 2024 Méjane Vaz - <a href="#contato">Contato</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
