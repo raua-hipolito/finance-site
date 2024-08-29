@@ -3,7 +3,7 @@ document.getElementById('whatsapp-button').addEventListener('click', function() 
     const mensagem = document.getElementById('mensagem').value;
 
     const textoWhatsApp = `Olá, meu nome é ${nome}. ${mensagem}`;
-    const numeroWhatsApp = '5591992319924'; // Coloque o número sem espaços e com o código do país (55 para o Brasil)
+    const numeroWhatsApp = '5591991865886'; // Coloque o número sem espaços e com o código do país (55 para o Brasil)
     
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWhatsApp)}`;
     window.open(url, '_blank');
